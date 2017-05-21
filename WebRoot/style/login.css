@@ -1,0 +1,316 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+	text-decoration:none;  
+	font-family:Microsoft YaHei, Helvitica, Verdana, Tohoma, Arial, san-serif;
+}
+
+#box{
+
+	width: 578px;
+	height:548px;
+	margin: 20px auto;
+	border:1px solid #BCDCDA;
+}
+#title{
+	width: 528px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+	padding-left: 50px;
+	color: #999;
+	
+
+}
+#title .close_btn{
+	width: 30px;
+	height: 50px;
+	padding: 12px 0;
+	float: right;
+}
+#title .close_btn a{
+	color: #999;
+}
+#main{
+	width: 578px;
+	height: 548px;
+	border-top: 1px solid #CCC;
+}
+#main form{
+	width: 528px;
+	padding-left: 50px;
+	height: 548px;
+	margin: 0 auto;
+	
+	}
+#main form div{
+	margin:10px 0; 
+}
+#main form lable{
+	display: inline-block;
+    width: 60px;
+    margin-right: 10px;
+    line-height: 31px;
+    font-size: 14px;
+    text-align: right;
+    color: #333;
+	cursor: default;
+}
+
+#main input{
+	  width:260px;
+	  height:30px;
+	  }
+#main .check{
+	width:100px;
+	height:30px;
+	margin-left:75px;
+	}
+#main .verBut{
+	width:155px;
+	height:32px;
+	background:#26A11B;
+	color:#fff;
+	border:none;
+	}
+#main .sub{
+	width:264px;
+	height:40px;
+	line-height:40px;
+	background:#26A11B;
+	margin-left: 75px;
+	border:none;
+	border-radius: 3px;
+	font-size: 18px;
+	color: #fff;
+}
+#main .sex{width:30px; height:15px;}
+#main .address select{
+	width: 84px;
+}
+#main .pro{
+	width:120px;
+	}
+/*validate 控制样式*/
+.error{
+	color: red;
+	font-size: 12px;
+}
+#main .m_check{
+	position:relative;
+	}
+#main #check-error{
+	position:absolute;
+	line-height:34px;
+	right:88px;
+	}
+/*资料修改页面*/
+#Up_top{
+	width: 100%;
+	height: 10px;
+/*	background: #847348;*/
+	background:#FF8C69 ;
+}
+#U_left{
+	width: 298px;
+	padding-top:100px; 
+	float: left;
+	
+}
+#U_left .up{
+	width: 288px;
+	height: 70px;
+	line-height: 70px;
+	
+	border-bottom: 1px solid #ccc;
+}
+
+	}
+#U_left .lb{
+	border-left: 2px solid #BE3948;
+}
+#U_left .up a{
+	color: #333333;
+	padding-left: 40px;
+	width: 288px;
+	display: block;
+}
+#U_left .up:hover a{
+	color: #BE3948;
+}
+/*修改右边开始*/
+#U_right{
+	width: 898px;
+	float: left;
+	/*border-left: 1px solid #ccc;*/
+}
+#U_right .update{
+	width: 598px;
+	border: 1px solid #000;
+	margin: 10px auto;
+	background: ##28A7C7;
+}
+
+#U_right .text{
+	width: 598px;
+	border: 1px solid #000;
+	margin: 10px auto;
+	background: ##28A7C7;
+}
+#U_right .U_top{
+	width: 600px;
+	height: 300px;
+	
+	margin: 0 auto;
+	position: relative;
+}
+#U_right .head_portrait{
+	width: 590px;
+	height: 70px;
+	position: absolute;
+	left: 10px;
+	bottom: 60px;
+	/*border-bottom: 2px solid #5B5959;*/
+}
+
+a{color:#000;border:1px solid #000;} /* 默认的样式 */
+a:hover{border-color:#ccc;} /* 鼠标经过时的样式 */
+#U_right .head_portrait img{
+
+	width: 60px;
+	height: 60px;
+	border: 1px solid #fff;
+	padding:2px;
+}
+#U_right .h_name{
+	 position: absolute;
+	 left: 80px;
+	 top:20px;
+	 color: #000;
+	 font-size: 18px;
+}
+#U_right .edit{
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+}
+#U_right .editBut{
+	width: 80px;
+	height: 30px;
+	border: none;
+	
+	background: #DAD3C1;
+}
+#U_right .editBut:hover{
+	background: #AF9F7B;
+}
+/*右边主体开始*/
+#U_right .R_main{
+	width: 600px;
+	margin: 30px; 
+}
+#U_right .R_main lable{
+	width: 150px;
+	display: inline-block;
+	font-size: 14px;
+    text-align: right;
+    color: #333;
+	cursor: default;
+	margin-right: 10px;
+
+}
+#U_right .R_main div{
+	margin: 12px 0;
+}
+#U_right .R_main input{
+	width: 250px;
+	height: 30px;
+}
+#U_right .R_main .choose select{
+	width: 81px;
+	height: 30px;
+}
+/*头像设置页面*/
+ #U_right .Ur_photo{
+
+ 	width: 510px;
+ 	margin: 100px 120px;
+ }
+ #U_right .Ur_photo img{
+ 	width: 220px;
+ 	height: 220px;
+ 	border: 1px solid #ccc;
+ 	padding: 2px;
+ }
+ #U_right .upload{
+ 	width: 250px;
+ 	margin-top: 180px;
+ 	margin-left: 30px;
+ 	height: 40px;
+ 	line-height: 40px;
+ 	float: left;
+ 	position: relative;
+ }
+ #U_right .upload a{
+ 	position: absolute;
+ 	bottom: 0;
+ 	left: 0;
+ 	right: 0;
+ 	margin: 0 auto;
+ 	background: #363D40;
+ 	text-align: center;
+ 	color: #fff;
+ }
+ #U_right .upload input{
+ 	width: 250px;
+ 	height: 30px;
+ 	background:none;
+ 	border:none;
+ 	opacity: 0;
+ 	z-index: 5;
+ }
+ /*修改密码页面*/
+ #U_right .Pw_box{
+ 	width: 550px;
+ 	margin: 100px 100px;
+ 	
+ }
+ #U_right .Pw_box .form{
+ 	width: 550px;
+ 	color: #333333; 
+ }
+#U_right .Pw_box .form div{
+	margin: 30px 0;
+}
+ #U_right .Pw_box lable{
+ 	display: inline-block;
+    width: 60px;
+    margin-right: 10px;
+    line-height: 31px;
+    font-size: 14px;
+    text-align: right;
+    color: #656E73;
+	cursor: default;
+ }
+ #U_right .Pw_box input{
+ 	width: 400px;
+ 	height: 24px;
+ 	line-height: 24px;
+ 	padding: 7px 7px 7px 48px;
+ 	border:1px solid #ccc;
+ 	background:url(../img/rl-sprite.png) no-repeat -80px -772px;
+ 	color: initial;
+ }
+ #U_right .Pw_box .save{
+ 	width: 459px;
+ 	height: 40px;
+ 	line-height: 40px;
+ 	background: #33A646;
+ 	border:none;
+ 	padding: 0;
+ 	color: #fff;
+ 	font-size: 16px;
+ }

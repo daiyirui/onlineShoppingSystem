@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+    <servlet>
+        <description>This is the description of my J2EE component</description>
+        <display-name>This is the display name of my J2EE component</display-name>
+        <servlet-name>UserManagerServlet</servlet-name>
+        <servlet-class>com.jxust.service.UserManagerServlet</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>UserManagerServlet</servlet-name>
+        <url-pattern>/UserManagerServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AppOrderManagerServlet</servlet-name>
+        <servlet-class>com.jxust.service.AppOrderManagerServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AppOrderManagerServlet</servlet-name>
+        <url-pattern>/AppOrderManagerServlet</url-pattern>
+    </servlet-mapping>
+    
+
+    <servlet>
+        <servlet-name>AppLoginServlet</servlet-name>
+        <servlet-class>com.jxust.service.AppLoginServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <description>This is the description of my J2EE component</description>
+        <display-name>This is the display name of my J2EE component</display-name>
+        <servlet-name>ProductManagerServlet</servlet-name>
+        <servlet-class>com.jxust.service.ProductManagerServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <description>This is the description of my J2EE component</description>
+        <display-name>This is the display name of my J2EE component</display-name>
+
+        <servlet-name>ShoppingcartManagerServlet</servlet-name>
+        <servlet-class>com.jxust.service.ShoppingcartManagerServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <description>This is the description of my J2EE component</description>
+        <display-name>This is the display name of my J2EE component</display-name>
+        <servlet-name>BrowseproductManagerServlet</servlet-name>
+        <servlet-class>com.jxust.service.BrowseproductManagerServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>AppShoppingCartManagerServlet</servlet-name>
+        <servlet-class>com.jxust.service.AppShoppingCartManagerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AppShoppingCartManagerServlet</servlet-name>
+        <url-pattern>/AppShoppingCartManagerServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>AppLoginServlet</servlet-name>
+        <url-pattern>/AppLoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ProductManagerServlet</servlet-name>
+        <url-pattern>/ProductManagerServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ShoppingcartManagerServlet</servlet-name>
+        <url-pattern>/ShoppingcartManagerServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BrowseproductManagerServlet</servlet-name>
+        <url-pattern>/BrowseproductManagerServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AppBrowseproductManagerServlet</servlet-name>
+        <servlet-class>com.jxust.service.AppBrowseproductManagerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AppBrowseproductManagerServlet</servlet-name>
+        <url-pattern>/AppBrowseproductManagerServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AppProductManagerServlet</servlet-name>
+        <servlet-class>com.jxust.service.AppProductManagerServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <description>This is the description of my J2EE component</description>
+        <display-name>This is the display name of my J2EE component</display-name>
+        <servlet-name>OrderManagerServlet</servlet-name>
+        <servlet-class>com.jxust.service.OrderManagerServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <description>This is the description of my J2EE component</description>
+        <display-name>This is the display name of my J2EE component</display-name>
+        <servlet-name>OtherManagerServlet</servlet-name>
+        <servlet-class>com.jxust.service.OtherManagerServlet</servlet-class>
+    </servlet>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AppOtherManagerServlet</servlet-name>
+    <servlet-class>com.jxust.service.AppOtherManagerServlet</servlet-class>
+  </servlet>
+
+
+
+
+    <servlet-mapping>
+        <servlet-name>AppProductManagerServlet</servlet-name>
+        <url-pattern>/AppProductManagerServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>OrderManagerServlet</servlet-name>
+        <url-pattern>/OrderManagerServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>OtherManagerServlet</servlet-name>
+        <url-pattern>/OtherManagerServlet</url-pattern>
+    </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>AppOtherManagerServlet</servlet-name>
+    <url-pattern>/AppOtherManagerServlet</url-pattern>
+  </servlet-mapping>
+
+    <filter>
+        <filter-name>CharsetEncodingFilter</filter-name>
+        <filter-class>
+            com.jxust.commons.CharsetEncodingFilter
+        </filter-class>
+        <init-param>
+            <param-name>endcoding</param-name>
+            <param-value>utf-8</param-value> <!--设置你想用的字符集，我这里用的是GB18030-->
+        </init-param>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>CharsetEncodingFilter</filter-name>
+        <url-pattern>*</url-pattern>
+    </filter-mapping>
+
+
+    <welcome-file-list>
+        <welcome-file>/login.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
